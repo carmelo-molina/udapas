@@ -21,4 +21,14 @@ class Usuario extends BaseController
     {
         return view('');
     }
+
+    public function registrar()
+    {
+        return view('registrar');
+    }
+
+    public function registrar_nuevo_usuario()
+    {
+        
+    }
 }

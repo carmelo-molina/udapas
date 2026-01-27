@@ -24,7 +24,7 @@
     
     <div class="text-center mt-3">
       <a href="#">¿Olvidaste tu contraseña?</a>
-      <p class="mt-2">¿No tienes cuenta? <a href="#">Regístrate</a></p>
+      <p class="mt-2">¿No tienes cuenta? <a href="<?= base_url('registrar'); ?>">Regístrate</a></p>
     </div>
   </div>
 </div>

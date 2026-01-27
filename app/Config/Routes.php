@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Usuario::login');
 $routes->post('ingresar', 'Usuario::ingresar');
+$routes->get('registrar', 'Usuario::registrar');
