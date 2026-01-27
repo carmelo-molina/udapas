@@ -9,14 +9,6 @@ class AddNewColumnsToUsuarios extends Migration
     public function up()
     {
         $this->forge->addColumn('usuarios', [
-            'cuenta' => [
-                'type' => 'varchar',
-                'constraint' => '50',
-                null => true,
-                'comment' => 'Cuenta de usuario para conectarse al sistema',
-            ]
-        ]);
-        $this->forge->addColumn('usuarios', [
             'password' => [
                 'type' => 'varchar',
                 'constraint' => 150,
@@ -66,7 +58,6 @@ class AddNewColumnsToUsuarios extends Migration
 
     public function down()
     {
-        $this->forge->dropColumn('usuarios', 'cuenta');
         $this->forge->dropColumn('usuarios', 'password');
         $this->forge->dropColumn('usuarios', 'email');
         $this->forge->dropColumn('usuarios', 'estado');
