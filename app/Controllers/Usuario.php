@@ -16,4 +16,9 @@ class Usuario extends BaseController
     {
         return view('login');
     }
+
+    public function ingresar()
+    {
+        return view('');
+    }
 }
